@@ -28,7 +28,9 @@ public class StringChecker
         return result;
     }    
 
-    // checks if any pairs of pairs exist
+    // checks if any pairs of two-character strings exist
+    // ie. aeae is fine (ae repeats)
+    // ie. zyabcdefghijzy is fine (zy eventually repeats)
     // they cannot overlap (ie. 'aaaa' is good but 'aaa' is not)
     public static boolean pairOfPairsCheck(String target)
     {
